@@ -1,0 +1,17 @@
+{
+  "name": "futuros-api",
+  "version": "1.0.0",
+  "description": "Azure Functions API for bond-buddy-calculador",
+  "main": "dist/src/functions/*.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.16.5",
+    "typescript": "^5.0.0"
+  }
+}
