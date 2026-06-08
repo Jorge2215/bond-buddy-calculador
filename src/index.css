@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Dark theme = default */
+    --background: 220 20% 7%;
+    --foreground: 210 20% 92%;
+
+    --card: 220 18% 10%;
+    --card-foreground: 210 20% 92%;
+
+    --popover: 220 18% 10%;
+    --popover-foreground: 210 20% 92%;
+
+    --primary: 142 60% 45%;
+    --primary-foreground: 220 20% 7%;
+
+    --secondary: 220 16% 16%;
+    --secondary-foreground: 210 20% 85%;
+
+    --muted: 220 14% 14%;
+    --muted-foreground: 215 15% 55%;
+
+    --accent: 47 90% 55%;
+    --accent-foreground: 220 20% 7%;
+
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 14% 18%;
+    --input: 220 14% 18%;
+    --ring: 142 60% 45%;
+
+    --radius: 0.5rem;
+
+    --positive: 142 60% 45%;
+    --negative: 0 72% 55%;
+    --warning: 47 90% 55%;
+    --info: 210 80% 55%;
+
+    --sidebar-background: 220 18% 10%;
+    --sidebar-foreground: 210 20% 92%;
+    --sidebar-primary: 142 60% 45%;
+    --sidebar-primary-foreground: 220 20% 7%;
+    --sidebar-accent: 220 14% 14%;
+    --sidebar-accent-foreground: 210 20% 85%;
+    --sidebar-border: 220 14% 18%;
+    --sidebar-ring: 142 60% 45%;
+  }
+
+  .light {
+    --background: 0 0% 98%;
+    --foreground: 220 20% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+
+    --primary: 142 60% 38%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 92%;
+    --secondary-foreground: 220 20% 20%;
+
+    --muted: 220 14% 94%;
+    --muted-foreground: 215 15% 40%;
+
+    --accent: 38 92% 45%;
+    --accent-foreground: 220 20% 10%;
+
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 14% 85%;
+    --input: 220 14% 85%;
+    --ring: 142 60% 38%;
+
+    --positive: 142 60% 38%;
+    --negative: 0 72% 50%;
+    --warning: 38 92% 45%;
+    --info: 210 80% 50%;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 20% 10%;
+    --sidebar-primary: 142 60% 38%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 14% 94%;
+    --sidebar-accent-foreground: 220 20% 20%;
+    --sidebar-border: 220 14% 85%;
+    --sidebar-ring: 142 60% 38%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    font-family: 'Roboto', system-ui, sans-serif;
+  }
+
+  html, body {
+    font-family: 'Roboto', system-ui, sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Recharts SVG text */
+  text, tspan {
+    font-family: 'Roboto', system-ui, sans-serif !important;
+  }
+
+  /* Inputs and tables */
+  input, button, select, textarea, table, th, td {
+    font-family: 'Roboto', system-ui, sans-serif;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer utilities {
+  /* Override font-mono and font-sans to ALL use Roboto */
+  .font-mono {
+    font-family: 'Roboto', system-ui, sans-serif !important;
+    font-variant-numeric: tabular-nums;
+  }
+  .font-sans {
+    font-family: 'Roboto', system-ui, sans-serif !important;
+  }
+}

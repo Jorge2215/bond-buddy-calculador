@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/futuros.ts": {
+      "maxDuration": 30
+    }
+  }
+}
