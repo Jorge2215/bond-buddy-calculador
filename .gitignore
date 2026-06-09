@@ -24,3 +24,33 @@ api/local.settings.json
 *.njsproj
 *.sln
 *.sw?
+
+# Azure Functions / Static Web Apps
+api/node_modules/
+.azure/
+azurite/
+local.settings.json
+
+# Vite / TypeScript build artifacts
+.vite/
+*.tsbuildinfo
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Windows system files
+Thumbs.db
+desktop.ini
+*.lnk
+
+# Testing artifacts
+coverage/
+playwright-report/
+test-results/
+.playwright/
+
+# Miscellaneous caches / packages
+*.tgz
+.cache/
