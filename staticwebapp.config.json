@@ -14,18 +14,6 @@
       "statusCode": 200
     }
   ],
-  "auth": {
-    "identityProviders": {
-      "azureActiveDirectory": {
-        "userDetailsClaim": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
-        "registration": {
-          "openIdIssuer": "https://login.microsoftonline.com/eef41338-8caf-4011-87bf-ff1c9c425f9e",
-          "clientIdSettingName": "AZURE_CLIENT_ID",
-          "clientSecretSettingName": "AZURE_CLIENT_SECRET"
-        }
-      }
-    }
-  },
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": ["/api/*", "/_framework/*", "/static/*", "/.auth/*", "*.{css,js,png,jpg,svg,ico,woff,woff2}"]
