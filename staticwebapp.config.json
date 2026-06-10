@@ -33,7 +33,7 @@
   },
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/api/*", "/_framework/*", "/static/*", "*.{css,js,png,jpg,svg,ico,woff,woff2}"]
+    "exclude": ["/api/*", "/_framework/*", "/static/*", "/.auth/*", "*.{css,js,png,jpg,svg,ico,woff,woff2}"]
   },  
   "globalHeaders": {
     "content-security-policy": "default-src 'self' 'unsafe-inline' 'unsafe-eval' https://api.remarkets.primary.com.ar; img-src 'self' data:",
